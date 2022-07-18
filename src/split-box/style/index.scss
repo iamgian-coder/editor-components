@@ -1,0 +1,19 @@
+@import "../../style/index.scss";
+
+.#{$splitBox-prefix-cls} {
+  &-vertical > &-resizer {
+    width: 4px;
+    margin: 0 -2px;
+    background: transparent;
+  }
+
+  &-horizontal > &-resizer {
+    height: 4px;
+    margin: -2px;
+    background: transparent;
+  }
+
+  &-disabled > &-resizer {
+    cursor: default;
+  }
+}

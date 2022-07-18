@@ -1,0 +1,22 @@
+@import "../../style/index.scss";
+@import "../../scrollbar/style/index.scss";
+
+.#{$scrollBox-prefix-cls} {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &.#{$scrollBox-prefix-cls}-auto-hide {
+    & > .#{$scrollbar-prefix-cls} {
+      opacity: 0;
+      transition: opacity 3.5s cubic-bezier(0.3, 1.2, 0.2, 1);
+    }
+
+    &:hover > .#{$scrollbar-prefix-cls} {
+      opacity: 1;
+      transition: opacity 0.8s cubic-bezier(0.3, 1.2, 0.2, 1);
+    }
+  }
+}

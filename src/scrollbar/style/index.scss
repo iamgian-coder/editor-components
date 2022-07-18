@@ -1,0 +1,32 @@
+@import "../../style/index.scss";
+
+.#{$scrollbar-prefix-cls} {
+  position: absolute;
+  overflow: hidden;
+  background-color: $scrollbar-bg;
+  outline: none;
+
+  &-thumb {
+    background-color: $scrollbar-thumb-bg;
+  }
+
+  &-vertical {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .#{$scrollbar-prefix-cls}-thumb {
+      width: 100%;
+    }
+  }
+
+  &-horizontal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .#{$scrollbar-prefix-cls}-thumb {
+      height: 100%;
+    }
+  }
+}
