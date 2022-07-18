@@ -1,6 +1,6 @@
 {
   "name": "@gian-coder/editor-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Some components for building an editor",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -20,10 +20,19 @@
     "test:watch": "jest --watch",
     "lint:fix": "eslint . --fix"
   },
+  "license": "MIT",
   "author": {
     "name": "iamgian_coder",
     "url": "https://github.com/iamgian_coder",
     "email": "iamgiancoder@gmail.com"
+  },
+  "homepage": "https://github.com/iamgian-coder/editor-components",
+  "bugs": {
+    "url": "https://github.com/iamgian-coder/editor-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamgian-coder/editor-components"
   },
   "keywords": [
     "x6",
@@ -31,7 +40,6 @@
     "topology",
     "editor"
   ],
-  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
